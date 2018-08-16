@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @therapy.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @therapy.description %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @therapy.value %>
+</p>
+
+<%= link_to 'Edit', edit_therapy_path(@therapy) %> |
+<%= link_to 'Back', therapies_path %>

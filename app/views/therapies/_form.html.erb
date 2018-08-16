@@ -1,0 +1,42 @@
+<%= form_with(model: therapy, local: true) do |form| %>
+  <% if therapy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(therapy.errors.count, "error") %> prohibited this therapy from being saved:</h2>
+
+      <ul>
+      <% therapy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :therapy_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :therapy_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :value %>
+    <%= form.text_field :value, id: :therapy_value %>
+  </div>
+
+  <br/>
+  <div class="field">
+    <div class="field_head"><h4>Therapists</h4></div>
+    <%= hidden_field_tag("therapy[therapist_ids][]", nil) %>
+    <% Therapist.order(:name).each do |therapist| %>
+      <label><%= check_box_tag("therapy[therapist_ids][]", therapist.id, therapist.id.in?(@therapy.therapists.collect(&:id))) %> <%= therapist.name %></label>
+    <% end %>
+  </div>
+  
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
