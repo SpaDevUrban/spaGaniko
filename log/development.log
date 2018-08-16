@@ -3737,3 +3737,29 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 443ms (Views: 441.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.17.0.1 at 2018-08-16 21:47:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mFacility Load (0.2ms)[0m  [1m[34mSELECT "facilities".* FROM "facilities"[0m
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 6422ms (Views: 6384.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/administrators" for 172.17.0.1 at 2018-08-16 21:48:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"istrators"}
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2018-08-16 21:48:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 130ms (Views: 113.9ms | ActiveRecord: 0.6ms)
+
+
