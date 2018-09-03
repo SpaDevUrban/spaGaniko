@@ -12,13 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20180615160724) do
 
-  create_table "Therapies_Therapists", id: false, force: :cascade do |t|
-    t.integer "Therapy_id", null: false
-    t.integer "Therapist_id", null: false
-    t.index ["Therapist_id", "Therapy_id"], name: "index_Therapies_Therapists_on_therapist_id_and_therapy_id"
-    t.index ["Therapy_id", "Therapist_id"], name: "index_Therapies_Therapists_on_therapy_id_and_therapist_id"
-  end
-
   create_table "facilities", force: :cascade do |t|
     t.float "latitude"
     t.float "longitude"
@@ -36,6 +29,13 @@ ActiveRecord::Schema.define(version: 20180615160724) do
     t.decimal "decimal", precision: 8, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "therapies_therapists", id: false, force: :cascade do |t|
+    t.integer "therapy_id", null: false
+    t.integer "therapist_id", null: false
+    t.index ["therapist_id", "therapy_id"], name: "index_therapies_therapists_on_therapist_id_and_therapy_id"
+    t.index ["therapy_id", "therapist_id"], name: "index_therapies_therapists_on_therapy_id_and_therapist_id"
   end
 
   create_table "therapists", force: :cascade do |t|
