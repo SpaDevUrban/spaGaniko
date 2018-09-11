@@ -1,0 +1,22 @@
+
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Serviços</h1>
+<% cache ['pages', Therapy.last] do %>
+  <% @therapies.each do |therapy| %>
+    <% cache ['entry', therapy] do %>
+      <div class="entry">
+        <%= image_tag('https://i0.wp.com/www.coisasdojapao.com/wp-content/uploads/2017/09/naruto.2.jpg', size: '150') %>
+        <h3><%= therapy.name %></h3>
+        <%= sanitize(therapy.description) %>
+        <div class="price_line">
+          <span class="price"><%= number_to_currency(therapy.value) %></span>
+          <%= button_to 'Add to Cart', line_items_path(therapy_id: therapy) %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>
+<%= paginate @therapies %>

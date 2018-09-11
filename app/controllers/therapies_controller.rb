@@ -3,8 +3,9 @@ class TherapiesController < ApplicationController
 
   # GET /therapies
   # GET /therapies.json
+
   def index
-    @therapies = Therapy.all
+    @therapies = Therapy.all.page(params['page']).per(5)
   end
 
   # GET /therapies/1

@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180615160724) do
+ActiveRecord::Schema.define(version: 20180910172616) do
+
+  create_table "carts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "facilities", force: :cascade do |t|
     t.float "latitude"
@@ -20,6 +25,15 @@ ActiveRecord::Schema.define(version: 20180615160724) do
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "line_items", force: :cascade do |t|
+    t.integer "therapy_id"
+    t.integer "cart_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cart_id"], name: "index_line_items_on_cart_id"
+    t.index ["therapy_id"], name: "index_line_items_on_therapy_id"
   end
 
   create_table "therapies", force: :cascade do |t|
