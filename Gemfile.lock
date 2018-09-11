@@ -73,6 +73,7 @@ GEM
       sass (~> 3.2)
     builder (3.2.3)
     byebug (10.0.2)
+    cancancan (2.2.0)
     capybara (2.18.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -224,6 +225,8 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
+    toastr-rails (1.0.3)
+      railties (>= 3.1.0)
     turbolinks (5.1.1)
       turbolinks-source (~> 5.1)
     turbolinks-source (5.1.0)
@@ -252,6 +255,7 @@ DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass (~> 3.2.0)
   byebug
+  cancancan
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   devise
@@ -270,6 +274,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
+  toastr-rails
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)

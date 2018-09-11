@@ -5,6 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+#controlar acesso a dos usuarios
+gem 'cancancan'
+#Mensagens
+gem 'toastr-rails'
 #paginacao
 gem 'kaminari'
 #autenticacao

@@ -16,3 +16,4 @@
 //= require gmaps/google
 //= require bootstrap-sprockets
 //= require_tree .
+//= require toastr

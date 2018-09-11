@@ -1,4 +1,5 @@
 class TherapiesController < ApplicationController
+  skip_before_action :authenticate_user!, :only => [:index]
   before_action :set_therapy, only: [:show, :edit, :update, :destroy]
 
   # GET /therapies
