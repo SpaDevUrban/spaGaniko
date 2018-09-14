@@ -10,13 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180911210432) do
+ActiveRecord::Schema.define(version: 20180913182441) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
+    t.bigint "user_id"
     t.index ["user_id"], name: "index_carts_on_user_id"
+  end
+
+  create_table "clients", force: :cascade do |t|
+    t.string "name"
+    t.date "birthdate"
+    t.string "email"
+    t.string "occupation"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "facilities", force: :cascade do |t|
@@ -30,8 +42,8 @@ ActiveRecord::Schema.define(version: 20180911210432) do
   end
 
   create_table "line_items", force: :cascade do |t|
-    t.integer "therapy_id"
-    t.integer "cart_id"
+    t.bigint "therapy_id"
+    t.bigint "cart_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["cart_id"], name: "index_line_items_on_cart_id"
@@ -48,8 +60,8 @@ ActiveRecord::Schema.define(version: 20180911210432) do
   end
 
   create_table "therapies_therapists", id: false, force: :cascade do |t|
-    t.integer "therapy_id", null: false
-    t.integer "therapist_id", null: false
+    t.bigint "therapy_id", null: false
+    t.bigint "therapist_id", null: false
     t.index ["therapist_id", "therapy_id"], name: "index_therapies_therapists_on_therapist_id_and_therapy_id"
     t.index ["therapy_id", "therapist_id"], name: "index_therapies_therapists_on_therapy_id_and_therapist_id"
   end
@@ -85,4 +97,7 @@ ActiveRecord::Schema.define(version: 20180911210432) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "carts", "users"
+  add_foreign_key "line_items", "carts"
+  add_foreign_key "line_items", "therapies"
 end

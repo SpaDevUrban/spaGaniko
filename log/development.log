@@ -16129,3 +16129,989 @@ Completed 200 OK in 190ms (Views: 186.7ms | ActiveRecord: 0.7ms)
   [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2018-09-12 18:29:07.607536"], ["key", "environment"]]
   [1m[35m (87.8ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.17.0.1 at 2018-09-14 14:04:42 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.1.6) lib/active_record/connection_adapters/postgresql_adapter.rb:697:in `connect'
+activerecord (5.1.6) lib/active_record/connection_adapters/postgresql_adapter.rb:221:in `initialize'
+activerecord (5.1.6) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.6) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.6) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.6) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.6) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 172.17.0.1 at 2018-09-14 14:06:48 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (16.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.6) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6669822458352587205)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFacilities (20180419033718)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (765.6ms)[0m  [1m[35mCREATE TABLE "facilities" ("id" bigserial primary key, "latitude" float, "longitude" float, "address" character varying, "description" text, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180419033718"]]
+  [1m[35m (44.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTherapists (20180514174116)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (207.2ms)[0m  [1m[35mCREATE TABLE "therapists" ("id" bigserial primary key, "name" character varying, "surname" character varying, "email" character varying, "cpf" character varying, "phone1" character varying, "phone2" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180514174116"]]
+  [1m[35m (39.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTherapies (20180514223800)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (227.0ms)[0m  [1m[35mCREATE TABLE "therapies" ("id" bigserial primary key, "name" character varying, "description" character varying, "value" decimal(8,2), "decimal" decimal(8,2), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180514223800"]]
+  [1m[35m (74.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableTherapyTherapist (20180514233724)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "therapies_therapists" ("therapy_id" bigint NOT NULL, "therapist_id" bigint NOT NULL)[0m
+  [1m[35m (204.4ms)[0m  [1m[35mCREATE  INDEX  "index_therapies_therapists_on_therapy_id_and_therapist_id" ON "therapies_therapists"  ("therapy_id", "therapist_id")[0m
+  [1m[35m (104.2ms)[0m  [1m[35mCREATE  INDEX  "index_therapies_therapists_on_therapist_id_and_therapy_id" ON "therapies_therapists"  ("therapist_id", "therapy_id")[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180514233724"]]
+  [1m[35m (83.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20180615160702)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (113.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180615160702"]]
+  [1m[35m (84.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddDeviseToUsers (20180615160724)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (712.3ms)[0m  [1m[35mALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (229.0ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" timestamp[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" timestamp[0m
+  [1m[35m (282.5ms)[0m  [1m[35mALTER TABLE "users" ADD "sign_in_count" integer DEFAULT 0 NOT NULL[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "current_sign_in_at" timestamp[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "last_sign_in_at" timestamp[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "current_sign_in_ip" character varying[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "last_sign_in_ip" character varying[0m
+  [1m[35m (84.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (185.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180615160724"]]
+  [1m[35m (99.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCarts (20180910170825)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (107.6ms)[0m  [1m[35mCREATE TABLE "carts" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180910170825"]]
+  [1m[35m (94.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLineItems (20180910172616)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (138.7ms)[0m  [1m[35mCREATE TABLE "line_items" ("id" bigserial primary key, "therapy_id" bigint, "cart_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_23b450e136"
+FOREIGN KEY ("therapy_id")
+  REFERENCES "therapies" ("id")
+, CONSTRAINT "fk_rails_af645e8e5f"
+FOREIGN KEY ("cart_id")
+  REFERENCES "carts" ("id")
+)[0m
+  [1m[35m (181.5ms)[0m  [1m[35mCREATE  INDEX  "index_line_items_on_therapy_id" ON "line_items"  ("therapy_id")[0m
+  [1m[35m (108.6ms)[0m  [1m[35mCREATE  INDEX  "index_line_items_on_cart_id" ON "line_items"  ("cart_id")[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180910172616"]]
+  [1m[35m (79.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddRolesToUsers (20180911190240)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "users" ADD "superadmin_role" boolean[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "receptionist_role" boolean[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "user_role" boolean[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180911190240"]]
+  [1m[35m (93.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserToCarts (20180911210432)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "carts" ADD "user_id" bigint[0m
+  [1m[35m (106.8ms)[0m  [1m[35mCREATE  INDEX  "index_carts_on_user_id" ON "carts"  ("user_id")[0m
+  [1m[35m (4.0ms)[0m  [1m[35mALTER TABLE "carts" ADD CONSTRAINT "fk_rails_ea59a35211"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180911210432"]]
+  [1m[35m (81.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (21.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-14 14:07:08.676906"], ["updated_at", "2018-09-14 14:07:08.676906"]]
+  [1m[35m (98.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(6669822458352587205)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.17.0.1 at 2018-09-14 14:07:18 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  [1m[36mFacility Load (0.9ms)[0m  [1m[34mSELECT "facilities".* FROM "facilities"[0m
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 882ms (Views: 847.3ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/users/sign_in" for 172.17.0.1 at 2018-09-14 14:08:42 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (118.8ms)
+Completed 200 OK in 257ms (Views: 237.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 172.17.0.1 at 2018-09-14 14:08:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered users/registrations/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 138ms (Views: 136.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.17.0.1 at 2018-09-14 14:09:12 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PGG/7QWM3o0tRJrll+GyaHEzxcd463JuTf9AZqCMsd0T/0gQM7NA7BKNTsXNYfsRCWt9qkIbU26GYibgEVzo3g==", "user"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at", "email", "encrypted_password") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2018-09-14 14:09:12.872859"], ["updated_at", "2018-09-14 14:09:12.872859"], ["email", "admin@email.com"], ["encrypted_password", "$2a$11$U2t.qjuSUXua3ap8agILqeoLO06Lig6hsEgBzaXp8G3VphcLI2xe6"]]
+  [1m[35m (104.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "sign_in_count" = $2, "current_sign_in_at" = $3, "last_sign_in_at" = $4, "current_sign_in_ip" = $5, "last_sign_in_ip" = $6 WHERE "users"."id" = $7[0m  [["updated_at", "2018-09-14 14:09:12.983365"], ["sign_in_count", 1], ["current_sign_in_at", "2018-09-14 14:09:12.981747"], ["last_sign_in_at", "2018-09-14 14:09:12.981747"], ["current_sign_in_ip", "172.17.0.1"], ["last_sign_in_ip", "172.17.0.1"], ["id", 1]]
+  [1m[35m (147.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:32768/
+Completed 302 Found in 623ms (ActiveRecord: 256.2ms)
+
+
+Started GET "/" for 172.17.0.1 at 2018-09-14 14:09:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mFacility Load (0.4ms)[0m  [1m[34mSELECT "facilities".* FROM "facilities"[0m
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 130ms (Views: 126.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin" for 172.17.0.1 at 2018-09-14 14:09:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+
+
+  
+CanCan::AccessDenied (You are not authorized to access this page.):
+  
+cancancan (2.2.0) lib/cancan/ability.rb:176:in `authorize!'
+/home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/lib/rails_admin/extensions/cancancan/authorization_adapter.rb:11:in `initialize'
+/home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/lib/rails_admin/config.rb:157:in `new'
+/home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/lib/rails_admin/config.rb:157:in `block in authorize_with'
+/home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/controllers/rails_admin/application_controller.rb:54:in `instance_eval'
+/home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/controllers/rails_admin/application_controller.rb:54:in `_authorize!'
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+railties (5.1.6) lib/rails/railtie.rb:185:in `public_send'
+railties (5.1.6) lib/rails/railtie.rb:185:in `method_missing'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.1.6) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+/home/app/.rvm/gems/ruby-2.4.1/bundler/gems/remotipart-e08ea9a3aa8d/lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin" for 172.17.0.1 at 2018-09-14 14:12:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "carts"[0m
+  [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "facilities"[0m
+  [1m[36mFacility Load (0.4ms)[0m  [1m[34mSELECT  "facilities".* FROM "facilities" ORDER BY "facilities"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items"[0m
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT  "line_items".* FROM "line_items" ORDER BY "line_items"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapists"[0m
+  [1m[36mTherapist Load (0.4ms)[0m  [1m[34mSELECT  "therapists".* FROM "therapists" ORDER BY "therapists"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapies"[0m
+  [1m[36mTherapy Load (0.6ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY "therapies"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (46.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (11.0ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (26.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (8.4ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (6.8ms)
+Completed 200 OK in 1850ms (Views: 678.0ms | ActiveRecord: 37.3ms)
+
+
+Started GET "/admin/user?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:12:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY users.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (112.4ms)
+Completed 200 OK in 148ms (Views: 129.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/user/1?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:12:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (7.4ms)
+Completed 200 OK in 39ms (Views: 22.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/user/1/edit?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:12:31 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"user", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (3.0ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (1.6ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_datetime.html.haml (2.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_datetime.html.haml (0.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (12.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_datetime.html.haml (1.7ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_datetime.html.haml (0.9ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_boolean.html.haml (4.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_boolean.html.haml (0.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_boolean.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_submit_buttons.html.haml (10.0ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (82.8ms)
+Completed 200 OK in 112ms (Views: 96.4ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/admin/user/1/edit" for 172.17.0.1 at 2018-09-14 14:12:35 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c8As49q7lZN7sHvMv4Q2aOkwW/PhZj3I23iS20xXtjPGNiqiS03CdO6ALm6Kst53CfV/8CiPn2iqz9sLQZIhRg==", "user"=>{"email"=>"admin@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "reset_password_sent_at"=>"[FILTERED]", "remember_created_at"=>"", "sign_in_count"=>"1", "current_sign_in_at"=>"September 14, 2018 14:09", "last_sign_in_at"=>"September 14, 2018 14:09", "current_sign_in_ip"=>"172.17.0.1", "last_sign_in_ip"=>"172.17.0.1", "superadmin_role"=>"1", "receptionist_role"=>"0", "user_role"=>"0"}, "return_to"=>"http://localhost:32768/admin/user/1", "_save"=>"", "model_name"=>"user", "id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "superadmin_role" = $3, "receptionist_role" = $4, "user_role" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2018-09-14 14:09:00"], ["last_sign_in_at", "2018-09-14 14:09:00"], ["superadmin_role", "t"], ["receptionist_role", "f"], ["user_role", "f"], ["updated_at", "2018-09-14 14:12:35.109463"], ["id", 1]]
+  [1m[35m (82.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:32768/admin/user/1
+Completed 302 Found in 109ms (ActiveRecord: 85.4ms)
+
+
+Started GET "/admin/user/1" for 172.17.0.1 at 2018-09-14 14:12:35 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"model_name"=>"user", "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/application
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/application (7.0ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (12.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.4ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (10.8ms)
+Completed 200 OK in 213ms (Views: 200.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin" for 172.17.0.1 at 2018-09-14 14:13:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "carts"[0m
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "facilities"[0m
+  [1m[36mFacility Load (0.4ms)[0m  [1m[34mSELECT  "facilities".* FROM "facilities" ORDER BY "facilities"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items"[0m
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT  "line_items".* FROM "line_items" ORDER BY "line_items"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapists"[0m
+  [1m[36mTherapist Load (0.7ms)[0m  [1m[34mSELECT  "therapists".* FROM "therapists" ORDER BY "therapists"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapies"[0m
+  [1m[36mTherapy Load (0.4ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY "therapies"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (29.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (11.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (23.1ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (12.0ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (6.2ms)
+Completed 200 OK in 1274ms (Views: 587.4ms | ActiveRecord: 35.1ms)
+
+
+Started GET "/admin/therapist?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:24:07 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapist"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mTherapist Load (0.9ms)[0m  [1m[34mSELECT  "therapists".* FROM "therapists" ORDER BY therapists.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (118.6ms)
+Completed 200 OK in 831ms (Views: 144.9ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/admin/therapist/new?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:24:09 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapist"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (5.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapies"[0m
+  [1m[36mTherapy Load (0.4ms)[0m  [1m[34mSELECT "therapies".* FROM "therapies" ORDER BY therapies.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (69.1ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_submit_buttons.html.haml (9.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (120.6ms)
+Completed 200 OK in 166ms (Views: 142.1ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/admin/therapy?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:24:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mTherapy Load (0.4ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY therapies.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (47.0ms)
+Completed 200 OK in 74ms (Views: 56.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/therapy/new?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:24:26 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (1.7ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapists"[0m
+  [1m[36mTherapist Load (0.5ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" ORDER BY therapists.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (12.4ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items"[0m
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" ORDER BY line_items.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (20.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_submit_buttons.html.haml (9.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (64.8ms)
+Completed 200 OK in 95ms (Views: 70.0ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/admin/therapy/new" for 172.17.0.1 at 2018-09-14 14:24:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"unQEXtAt/ARNGEDazpcMteVC05Cfu9z4Z00pizCPyOu7vAif3/fC73unT2GkpvDOokgOlbQOOLCMjmuIf2H5hw==", "therapy"=>{"name"=>"massagem", "description"=>"massagem", "value"=>"150", "decimal"=>"", "therapist_ids"=>["", ""], "line_item_ids"=>["", ""]}, "return_to"=>"http://localhost:32768/admin/therapy", "_save"=>"", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTherapist Load (0.5ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" WHERE 1=0[0m
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" WHERE 1=0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "therapies" ("name", "description", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "massagem"], ["description", "massagem"], ["value", "150.0"], ["created_at", "2018-09-14 14:24:38.902191"], ["updated_at", "2018-09-14 14:24:38.902191"]]
+  [1m[35m (116.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:32768/admin/therapy
+Completed 302 Found in 147ms (ActiveRecord: 119.5ms)
+
+
+Started GET "/admin/therapy" for 172.17.0.1 at 2018-09-14 14:24:39 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"therapy"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mTherapy Load (0.6ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY therapies.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (39.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (11.7ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (17.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.4ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (7.7ms)
+Completed 200 OK in 625ms (Views: 613.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/therapy/new?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:24:42 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (1.9ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36mTherapist Load (0.4ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" ORDER BY therapists.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (8.1ms)
+  [1m[36mLineItem Load (0.5ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" ORDER BY line_items.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (8.1ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_submit_buttons.html.haml (8.1ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (46.0ms)
+Completed 200 OK in 82ms (Views: 59.3ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/admin/therapy/new" for 172.17.0.1 at 2018-09-14 14:24:56 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XNJANc1m9HZEGrVV6FqApe66Xeb2/kDgOSqas68Hag5dGkz0wrzKnXKluu6Ca3zeqbCA491LpKjS6diw4OlbYg==", "therapy"=>{"name"=>"Shiatshu", "description"=>"", "value"=>"200", "decimal"=>"", "therapist_ids"=>["", ""], "line_item_ids"=>["", ""]}, "return_to"=>"http://localhost:32768/admin/therapy", "_save"=>"", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTherapist Load (0.5ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" WHERE 1=0[0m
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" WHERE 1=0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "therapies" ("name", "description", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Shiatshu"], ["description", ""], ["value", "200.0"], ["created_at", "2018-09-14 14:24:56.277885"], ["updated_at", "2018-09-14 14:24:56.277885"]]
+  [1m[35m (84.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:32768/admin/therapy
+Completed 302 Found in 108ms (ActiveRecord: 86.7ms)
+
+
+Started GET "/admin/therapy" for 172.17.0.1 at 2018-09-14 14:24:56 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"therapy"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mTherapy Load (0.6ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY therapies.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (43.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (12.6ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.3ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (9.4ms)
+Completed 200 OK in 244ms (Views: 232.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/therapy/new?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:25:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (2.4ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  [1m[36mTherapist Load (0.6ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" ORDER BY therapists.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (12.2ms)
+  [1m[36mLineItem Load (0.9ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" ORDER BY line_items.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (5.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_submit_buttons.html.haml (10.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (50.9ms)
+Completed 200 OK in 83ms (Views: 62.1ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/admin/therapy/new" for 172.17.0.1 at 2018-09-14 14:25:33 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mpSKU4VS/0zg9V5NXfHFtK901hRqFm0KWmD2VKTyct+bXIaSiojBp9ZKUfY3wDnP6H4LEUGjiUKxo7RX6xxDsw==", "therapy"=>{"name"=>"Quick Massage", "description"=>"", "value"=>"100", "decimal"=>"", "therapist_ids"=>["", ""], "line_item_ids"=>["", ""]}, "return_to"=>"http://localhost:32768/admin/therapy", "_save"=>"", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTherapist Load (0.6ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" WHERE 1=0[0m
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" WHERE 1=0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "therapies" ("name", "description", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Quick Massage"], ["description", ""], ["value", "100.0"], ["created_at", "2018-09-14 14:25:33.657799"], ["updated_at", "2018-09-14 14:25:33.657799"]]
+  [1m[35m (144.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:32768/admin/therapy
+Completed 302 Found in 169ms (ActiveRecord: 146.3ms)
+
+
+Started GET "/admin/therapy" for 172.17.0.1 at 2018-09-14 14:25:33 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"therapy"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mTherapy Load (0.6ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY therapies.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (51.1ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.4ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (13.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (9.3ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (8.1ms)
+Completed 200 OK in 264ms (Views: 253.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/therapies" for 172.17.0.1 at 2018-09-14 14:25:46 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TherapiesController#index as HTML
+  Rendering therapies/index.html.erb within layouts/application
+  [1m[36mTherapy Load (0.6ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY "therapies"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTherapy Load (0.5ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered therapies/index.html.erb within layouts/application (148.0ms)
+Completed 200 OK in 292ms (Views: 288.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/therapies" for 172.17.0.1 at 2018-09-14 14:26:16 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TherapiesController#index as HTML
+  Rendering therapies/index.html.erb within layouts/application
+  [1m[36mTherapy Load (0.4ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY "therapies"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTherapy Load (0.8ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered therapies/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 119ms (Views: 116.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/therapies" for 172.17.0.1 at 2018-09-14 14:27:16 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TherapiesController#index as HTML
+  Rendering therapies/index.html.erb within layouts/application
+  [1m[36mTherapy Load (1.0ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY "therapies"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTherapy Load (0.6ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered therapies/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 116ms (Views: 112.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin" for 172.17.0.1 at 2018-09-14 14:28:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "carts"[0m
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" ORDER BY "carts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "facilities"[0m
+  [1m[36mFacility Load (0.5ms)[0m  [1m[34mSELECT  "facilities".* FROM "facilities" ORDER BY "facilities"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items"[0m
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT  "line_items".* FROM "line_items" ORDER BY "line_items"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapists"[0m
+  [1m[36mTherapist Load (0.5ms)[0m  [1m[34mSELECT  "therapists".* FROM "therapists" ORDER BY "therapists"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapies"[0m
+  [1m[36mTherapy Load (0.5ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY "therapies"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (29.0ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (12.4ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (25.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (13.3ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (4.5ms)
+Completed 200 OK in 1263ms (Views: 575.6ms | ActiveRecord: 35.0ms)
+
+
+Started GET "/admin/therapy?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:28:19 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapy"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mTherapy Load (0.7ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY therapies.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (70.0ms)
+Completed 200 OK in 112ms (Views: 86.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/admin/therapy/new?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:28:21 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (3.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapists"[0m
+  [1m[36mTherapist Load (0.6ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" ORDER BY therapists.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (33.6ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items"[0m
+  [1m[36mLineItem Load (0.5ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" ORDER BY line_items.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (14.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_submit_buttons.html.haml (11.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (84.9ms)
+Completed 200 OK in 116ms (Views: 94.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/admin/therapy?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:28:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mTherapy Load (0.7ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY therapies.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (64.5ms)
+Completed 200 OK in 92ms (Views: 76.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/therapy/new?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:28:32 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (3.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  [1m[36mTherapist Load (0.8ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" ORDER BY therapists.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (10.7ms)
+  [1m[36mLineItem Load (0.6ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" ORDER BY line_items.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (7.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_submit_buttons.html.haml (10.9ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (53.9ms)
+Completed 200 OK in 92ms (Views: 72.6ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/admin/therapy/new" for 172.17.0.1 at 2018-09-14 14:28:44 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9XCqt8bLgb73trSuubqGbRsm6xH+8RcR+VoFWfLSud/0uKZ2yRG/VcEJuxXTi3oWXCw2FNVE81kSmUdavTyIsw==", "therapy"=>{"name"=>"Acupuntura", "description"=>"", "value"=>"300", "decimal"=>"", "therapist_ids"=>["", ""], "line_item_ids"=>["", ""]}, "return_to"=>"http://localhost:32768/admin/therapy", "_add_another"=>"", "model_name"=>"therapy"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTherapist Load (0.6ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" WHERE 1=0[0m
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" WHERE 1=0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "therapies" ("name", "description", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Acupuntura"], ["description", ""], ["value", "300.0"], ["created_at", "2018-09-14 14:28:44.695825"], ["updated_at", "2018-09-14 14:28:44.695825"]]
+  [1m[35m (144.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:32768/admin/therapy/new?return_to=http%3A%2F%2Flocalhost%3A32768%2Fadmin%2Ftherapy
+Completed 302 Found in 175ms (ActiveRecord: 147.6ms)
+
+
+Started GET "/admin/therapy/new?return_to=http%3A%2F%2Flocalhost%3A32768%2Fadmin%2Ftherapy" for 172.17.0.1 at 2018-09-14 14:28:44 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"return_to"=>"http://localhost:32768/admin/therapy", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (1.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  [1m[36mTherapist Load (0.4ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" ORDER BY therapists.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (9.2ms)
+  [1m[36mLineItem Load (0.6ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" ORDER BY line_items.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (4.4ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_submit_buttons.html.haml (8.7ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (42.0ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.7ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (14.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.5ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (11.6ms)
+Completed 200 OK in 248ms (Views: 236.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/admin/therapy/new" for 172.17.0.1 at 2018-09-14 14:29:00 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IkOe5zkT4mAu5ccUVWzglb56AKO6eiWF3ybTE8qn59JEC/XvWrRoR9ox1ZxmSomwWwgQbs2plqo+NIv/e7AygA==", "therapy"=>{"name"=>"Reiki", "description"=>"", "value"=>"130.0", "decimal"=>"", "therapist_ids"=>["", ""], "line_item_ids"=>["", ""]}, "return_to"=>"http://localhost:32768/admin/therapy", "_save"=>"", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTherapist Load (0.4ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" WHERE 1=0[0m
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" WHERE 1=0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "therapies" ("name", "description", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Reiki"], ["description", ""], ["value", "130.0"], ["created_at", "2018-09-14 14:29:00.496971"], ["updated_at", "2018-09-14 14:29:00.496971"]]
+  [1m[35m (115.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:32768/admin/therapy
+Completed 302 Found in 144ms (ActiveRecord: 117.6ms)
+
+
+Started GET "/admin/therapy" for 172.17.0.1 at 2018-09-14 14:29:00 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"therapy"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mTherapy Load (0.7ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY therapies.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (58.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (6.7ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (13.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (16.7ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (9.7ms)
+Completed 200 OK in 268ms (Views: 256.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/therapy/new?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:29:04 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapy"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (2.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.1ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36mTherapist Load (1.1ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" ORDER BY therapists.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (12.1ms)
+  [1m[36mLineItem Load (0.6ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" ORDER BY line_items.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (6.3ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_submit_buttons.html.haml (8.9ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (48.3ms)
+Completed 200 OK in 86ms (Views: 61.9ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/admin/therapy/new" for 172.17.0.1 at 2018-09-14 14:29:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MIbTax/6sh02WkHrKtL2ZRhNh04X1NSZQNuPeOcCkEUxTt+qECCM9gDlTlBA4woeX0daSzxhMNGrGM17qOyhKQ==", "therapy"=>{"name"=>"RPG", "description"=>"", "value"=>"", "decimal"=>"", "therapist_ids"=>["", ""], "line_item_ids"=>["", ""]}, "return_to"=>"http://localhost:32768/admin/therapy", "_save"=>"", "model_name"=>"therapy"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTherapist Load (0.6ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" WHERE 1=0[0m
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" WHERE 1=0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "therapies" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "RPG"], ["description", ""], ["created_at", "2018-09-14 14:29:14.340867"], ["updated_at", "2018-09-14 14:29:14.340867"]]
+  [1m[35m (130.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:32768/admin/therapy
+Completed 302 Found in 156ms (ActiveRecord: 133.2ms)
+
+
+Started GET "/admin/therapy" for 172.17.0.1 at 2018-09-14 14:29:14 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"therapy"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mTherapy Load (0.7ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY therapies.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (65.0ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.6ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (13.1ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.6ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (9.8ms)
+Completed 200 OK in 275ms (Views: 263.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/therapy/6/edit?_pjax=%5Bdata-pjax-container%5D" for 172.17.0.1 at 2018-09-14 14:29:18 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"therapy", "id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTherapy Load (0.5ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" WHERE "therapies"."id" = $1 ORDER BY "therapies"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (1.6ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.2ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36mTherapist Load (1.7ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" INNER JOIN "therapies_therapists" ON "therapists"."id" = "therapies_therapists"."therapist_id" WHERE "therapies_therapists"."therapy_id" = $1[0m  [["therapy_id", 6]]
+  [1m[36mTherapist Load (0.6ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" ORDER BY therapists.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (77.8ms)
+  [1m[36mLineItem Load (0.3ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" WHERE "line_items"."therapy_id" = $1[0m  [["therapy_id", 6]]
+  [1m[36mLineItem Load (0.4ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" ORDER BY line_items.id desc[0m
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (6.9ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/_submit_buttons.html.haml (11.8ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (119.4ms)
+Completed 200 OK in 157ms (Views: 133.4ms | ActiveRecord: 4.9ms)
+
+
+Started PUT "/admin/therapy/6/edit" for 172.17.0.1 at 2018-09-14 14:29:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7NS285ughdSUIxV+mnzXHhTtqqIbsMLzLPC0sPp4uTQaeK7dIJnaICxrA9kwF6q0K0btmJ9xuFNcpcdjrBIohw==", "therapy"=>{"name"=>"RPG", "description"=>"", "value"=>"200", "decimal"=>"", "therapist_ids"=>["", ""], "line_item_ids"=>["", ""]}, "return_to"=>"http://localhost:32768/admin/therapy", "_save"=>"", "model_name"=>"therapy", "id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTherapy Load (0.6ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" WHERE "therapies"."id" = $1 ORDER BY "therapies"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTherapist Load (0.5ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" WHERE 1=0[0m
+  [1m[36mTherapist Load (0.7ms)[0m  [1m[34mSELECT "therapists".* FROM "therapists" INNER JOIN "therapies_therapists" ON "therapists"."id" = "therapies_therapists"."therapist_id" WHERE "therapies_therapists"."therapy_id" = $1[0m  [["therapy_id", 6]]
+  [1m[36mLineItem Load (1.0ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" WHERE 1=0[0m
+  [1m[36mLineItem Load (0.5ms)[0m  [1m[34mSELECT "line_items".* FROM "line_items" WHERE "line_items"."therapy_id" = $1[0m  [["therapy_id", 6]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "therapies" SET "value" = $1, "updated_at" = $2 WHERE "therapies"."id" = $3[0m  [["value", "200.0"], ["updated_at", "2018-09-14 14:29:24.480529"], ["id", 6]]
+  [1m[35m (124.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:32768/admin/therapy
+Completed 302 Found in 156ms (ActiveRecord: 129.4ms)
+
+
+Started GET "/admin/therapy" for 172.17.0.1 at 2018-09-14 14:29:24 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"therapy"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mTherapy Load (0.7ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY therapies.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (64.1ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.6ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_navigation.html.haml (12.5ms)
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.7ms)
+  Rendering /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/app/.rvm/gems/ruby-2.4.1/bundler/gems/rails_admin-9abc1be0c1fe/app/views/layouts/rails_admin/pjax.html.haml (8.0ms)
+Completed 200 OK in 265ms (Views: 253.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/therapies" for 172.17.0.1 at 2018-09-14 14:29:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TherapiesController#index as HTML
+  Rendering therapies/index.html.erb within layouts/application
+  [1m[36mTherapy Load (1.0ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY "therapies"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTherapy Load (0.5ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapies"[0m
+  Rendered therapies/index.html.erb within layouts/application (154.0ms)
+Completed 200 OK in 310ms (Views: 306.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/therapies?page=2" for 172.17.0.1 at 2018-09-14 14:29:36 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TherapiesController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering therapies/index.html.erb within layouts/application
+  [1m[36mTherapy Load (0.4ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY "therapies"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTherapy Load (0.3ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 5]]
+  Rendered therapies/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 161ms (Views: 159.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/therapies" for 172.17.0.1 at 2018-09-14 14:29:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TherapiesController#index as HTML
+  Rendering therapies/index.html.erb within layouts/application
+  [1m[36mTherapy Load (2.8ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" ORDER BY "therapies"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTherapy Load (2.3ms)[0m  [1m[34mSELECT  "therapies".* FROM "therapies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "therapies"[0m
+  Rendered therapies/index.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 153ms (Views: 146.1ms | ActiveRecord: 5.6ms)
+
+
